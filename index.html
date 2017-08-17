@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>www.btdersleri.com</title>
+<title>indirimyapp</title>
 <script language="javascript">
 
 function hesapla()
 {
     var x=document.getElementById("kutu1").value;
 	var y=document.getElementById("kutu2").value;
-	var z=x*x+2*x*y+y*y;
+	var z=x*y/100;
 	document.getElementById("sonuc").innerHTML=z;
 }
 	
@@ -18,8 +18,7 @@ function hesapla()
 </style></head>
 
 <body>
-<p>x<sup>2</sup> + 2xy +y<sup>2</sup></p>
-<p>Kutulara x ve y değerlerini giriniz.</p>
+
 <p>
   x:
   <input type="text" name="kutu1" id="kutu1">
@@ -32,3 +31,4 @@ function hesapla()
 </p>
 
 </body>
+</html>
