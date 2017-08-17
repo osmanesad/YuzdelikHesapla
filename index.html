@@ -1,34 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<style>
+
+
+h1{
+
+font-family: "Calibri", Times, serif;
+font-size: 36px;
+}
+
+h2{
+  font-family: "Calibri", Times, serif;
+  font-size: 46px;
+
+}
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 46px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 36px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 36px;
+
+
+
+
+
+}
+
+
+</style>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>indirimyapp</title>
 <script language="javascript">
 
 function hesapla()
 {
-    var x=document.getElementById("kutu1").value;
-	var y=document.getElementById("kutu2").value;
-	var z=x*y/100;
+  var x=document.getElementById("kutu1").value;
+	var y = document.getElementById("liste").value;
+	var z=x*y;
 	document.getElementById("sonuc").innerHTML=z;
 }
-	
+
 </script>
+
+
 <style type="text/css">
-</style></head>
+</style>
+</head>
+
+
+
+
+
+
 
 <body>
 
 <p>
-  x:
+  <h1>Değer Girin Örnek 50 :</h1>
   <input type="text" name="kutu1" id="kutu1">
 </p>
-<p>y:
-  <input type="text" name="kutu2" id="kutu2">
-</p>
-<button onclick="hesapla()" value="a">Hesapla</button>
-<p>Sonuç: <b id="sonuc"></b>
+
+
+
+<h1><p>İndirim Degeri:</p><h1>
+<select id="liste">
+  <option>0.85</option>
+  <option>0.80</option>
+  <option>0.75</option>
+  <option>0.70</option>
+  <option>0.65</option>
+  <option>0.60</option>
+</select>
+
+
+
+
+<center>
+<button class="button" onclick="hesapla()" value="a">Hesapla</button>
+</center>
+
+
+
+
+<p><h1>Sonuç:</h1>
+<h2><b id="sonuc" class="text"></b><h2>
 </p>
 
+
+
+
+
+
+</div>
 </body>
 </html>
